@@ -72,10 +72,6 @@ public class Sorts{
             
 
         }
-
-        //temporary
-        //list[0] = 0;
-
     }
 
     /**
@@ -89,7 +85,18 @@ public class Sorts{
         System.out.println("Insertion Sort");
         System.out.println();
 
-
+        int i = 0;
+        int storage = 0;
+        while (i<list.length) {
+            int j=i;
+            while (j>0&&(list[j-1]>list[j])) {
+                storage = list[i-1];
+                list[i-1] = list[i];
+                list[i] = storage;
+                j--;
+            }
+            i++;
+        }
         
     }
 
