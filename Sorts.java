@@ -51,10 +51,9 @@ public class Sorts{
         int location = 0;
 
         for (int i = 0; i < list.length; i++) {
-            location = 0;
+            location = i;
             tempcurrent = 0;
             tempsmall = list[i];
-
 
             for (int p = 0+i; p < list.length; p++) {
                 steps++;
@@ -62,9 +61,11 @@ public class Sorts{
                 if (tempcurrent<tempsmall) {
                     tempsmall = tempcurrent;
                     location = p;
+                    
                 }
             }
             steps++;
+  
             list[location] = list[i];
             list[i] = tempsmall;
 
@@ -73,7 +74,7 @@ public class Sorts{
         }
 
         //temporary
-        list[0] = 0;
+        //list[0] = 0;
 
     }
 
@@ -88,6 +89,8 @@ public class Sorts{
         System.out.println("Insertion Sort");
         System.out.println();
 
+
+        
     }
 
      /**
