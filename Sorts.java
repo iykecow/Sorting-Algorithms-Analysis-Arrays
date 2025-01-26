@@ -46,6 +46,35 @@ public class Sorts{
         System.out.println("Selection Sort");
         System.out.println();
       
+        int tempsmall = list[0];
+        int tempcurrent = 0;
+        int location = 0;
+
+        for (int i = 0; i < list.length; i++) {
+            location = 0;
+            tempcurrent = 0;
+            tempsmall = list[i];
+
+
+            for (int p = 0+i; p < list.length; p++) {
+                steps++;
+                tempcurrent = list[p];
+                if (tempcurrent<tempsmall) {
+                    tempsmall = tempcurrent;
+                    location = p;
+                }
+            }
+            steps++;
+            list[location] = list[i];
+            list[i] = tempsmall;
+
+            
+
+        }
+
+        //temporary
+        list[0] = 0;
+
     }
 
     /**

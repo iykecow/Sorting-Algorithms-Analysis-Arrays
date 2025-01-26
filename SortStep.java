@@ -101,8 +101,9 @@ public class SortStep{
     //TODO: create code that will put random numbers between 1 and largestInt, inclusive, into array
     for(int i = 0; i < myArray.length; i++)
     {
-      
+      myArray[i] = (int)(Math.random()*(double)largestInt);
     }
+    screenOutput();
   }
 
   /**
