@@ -90,6 +90,7 @@ public class Sorts{
         while (i<list.length) {
             int j=i;
             while (j>0&&(list[j-1]>list[j])) {
+                steps++;
                 storage = list[i-1];
                 list[i-1] = list[i];
                 list[i] = storage;
